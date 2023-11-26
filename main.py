@@ -247,21 +247,21 @@ def calculate_total_risk_score(points):
     return points
 
 def categorize_risk_initial(score):
-    if score <= 15:
+    if score <= 13:
         return "Low"
-    elif score <= 30:
+    elif score <= 27:
         return "Moderate"
     else:
         return "High"
 
 def categorize_risk_total(score):
-    if score <= 20:
+    if score <= 18:
         return "Low"
-    elif score <= 40:
+    elif score <= 37:
         return "Moderate"
-    elif score <= 55:
+    elif score <= 50:
         return "High"
-    elif score <= 60:
+    elif score <= 55:
         return "Critical"
     else:
         return "High"
